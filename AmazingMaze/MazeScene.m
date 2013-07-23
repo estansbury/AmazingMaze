@@ -55,6 +55,8 @@
 
 -(SKNode *)newMazeNode
 {
+    //This comment is leftover from an earlier version. I've left it here for
+    //a redesign later
     
     /*CGMutablePathRef mazePath = CGPathCreateMutable();
     CGPathMoveToPoint(mazePath, NULL, 20, 268);
