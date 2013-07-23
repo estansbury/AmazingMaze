@@ -21,6 +21,9 @@
 		0C64DD30179DACB7000052B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C64DD12179DACB7000052B4 /* UIKit.framework */; };
 		0C64DD38179DACB7000052B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C64DD36179DACB7000052B4 /* InfoPlist.strings */; };
 		0C64DD3A179DACB7000052B4 /* AmazingMazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C64DD39179DACB7000052B4 /* AmazingMazeTests.m */; };
+		0C64DD44179DACC6000052B4 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C64DD43179DACC6000052B4 /* SpriteKit.framework */; };
+		0C64DD47179DAE8A000052B4 /* MazeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C64DD46179DAE8A000052B4 /* MazeScene.m */; };
+		0CF60506179E0356009F6C15 /* WinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF60505179E0356009F6C15 /* WinScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		0C64DD35179DACB7000052B4 /* AmazingMazeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmazingMazeTests-Info.plist"; sourceTree = "<group>"; };
 		0C64DD37179DACB7000052B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0C64DD39179DACB7000052B4 /* AmazingMazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazingMazeTests.m; sourceTree = "<group>"; };
+		0C64DD43179DACC6000052B4 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		0C64DD45179DAE8A000052B4 /* MazeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MazeScene.h; sourceTree = "<group>"; };
+		0C64DD46179DAE8A000052B4 /* MazeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MazeScene.m; sourceTree = "<group>"; };
+		0CF60504179E0356009F6C15 /* WinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinScene.h; sourceTree = "<group>"; };
+		0CF60505179E0356009F6C15 /* WinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C64DD44179DACC6000052B4 /* SpriteKit.framework in Frameworks */,
 				0C64DD11179DACB7000052B4 /* CoreGraphics.framework in Frameworks */,
 				0C64DD13179DACB7000052B4 /* UIKit.framework in Frameworks */,
 				0C64DD0F179DACB7000052B4 /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		0C64DD0D179DACB7000052B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C64DD43179DACC6000052B4 /* SpriteKit.framework */,
 				0C64DD0E179DACB7000052B4 /* Foundation.framework */,
 				0C64DD10179DACB7000052B4 /* CoreGraphics.framework */,
 				0C64DD12179DACB7000052B4 /* UIKit.framework */,
@@ -117,6 +127,10 @@
 				0C64DD20179DACB7000052B4 /* Main.storyboard */,
 				0C64DD23179DACB7000052B4 /* MazeViewController.h */,
 				0C64DD24179DACB7000052B4 /* MazeViewController.m */,
+				0C64DD45179DAE8A000052B4 /* MazeScene.h */,
+				0C64DD46179DAE8A000052B4 /* MazeScene.m */,
+				0CF60504179E0356009F6C15 /* WinScene.h */,
+				0CF60505179E0356009F6C15 /* WinScene.m */,
 				0C64DD26179DACB7000052B4 /* Images.xcassets */,
 				0C64DD15179DACB7000052B4 /* Supporting Files */,
 			);
@@ -251,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C64DD1B179DACB7000052B4 /* main.m in Sources */,
+				0CF60506179E0356009F6C15 /* WinScene.m in Sources */,
+				0C64DD47179DAE8A000052B4 /* MazeScene.m in Sources */,
 				0C64DD1F179DACB7000052B4 /* MazeAppDelegate.m in Sources */,
 				0C64DD25179DACB7000052B4 /* MazeViewController.m in Sources */,
 			);
@@ -455,6 +471,7 @@
 				0C64DD3F179DACB7000052B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C64DD40179DACB7000052B4 /* Build configuration list for PBXNativeTarget "AmazingMazeTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +480,7 @@
 				0C64DD42179DACB7000052B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

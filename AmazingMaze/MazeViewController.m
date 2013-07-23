@@ -7,6 +7,8 @@
 //
 
 #import "MazeViewController.h"
+#import "MazeScene.h"
+#import <SpriteKit/SpriteKit.h>
 
 @interface MazeViewController ()
 
@@ -17,7 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	SKView *mazeView = (SKView*) self.view;
+    mazeView.showsNodeCount = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +29,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    MazeScene *maze = [[MazeScene alloc] initWithSize:CGSizeMake(640, 1136)];
+    [((SKView *) self.view) presentScene:maze];
+}
+
+
+
+                                            
 @end
