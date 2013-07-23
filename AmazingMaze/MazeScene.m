@@ -169,9 +169,9 @@
     SKNode *player = [self childNodeWithName:@"player"];
     if(player.position.y >= 868)
     {
-        SKScene *won = [[WinScene alloc] init];
-        SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:0.5];
-        [self.view presentScene:won transition:doors];
+        SKScene *won = [[WinScene alloc] initWithSize:CGSizeMake(640, 1136)];
+        //SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:0.5];
+        [self.view presentScene:won];// transition:doors];
     }
 }
 
